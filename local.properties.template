@@ -1,0 +1,21 @@
+# absolute location of android sdk dir
+sdk.dir=
+# absolute location of key.store
+key.store=
+key.alias=
+# absolute location of proguard jar
+proguard.dir=
+tested.project.dir=
+# absolute location of TestedProject dir
+tested.project.absolute.dir=
+jni.build.mode=
+project.root =
+project.name =
+graphviz.loc =
+# absolute location of emma.jar
+emma.jar.loc =
+doc.build.mode =
+# absolute location of jcsc dir
+jcsc.home =
+# absolute location of jGrouseDoc dir
+jGrouseHome =
