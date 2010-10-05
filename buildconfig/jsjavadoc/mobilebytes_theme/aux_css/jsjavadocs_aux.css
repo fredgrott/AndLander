@@ -1,0 +1,11 @@
+.banner h1 a
+{
+    background:  transparent url(companylogo.png) no-repeat scroll left center;
+    line-height: 100px;
+    margin: 0px;
+    padding-left: 130px;
+    display: block;
+    height: 100%;
+    color: black;
+    text-decoration: none;
+}

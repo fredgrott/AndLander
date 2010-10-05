@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="AndCooperANT"  default="">
+     <!--  A separate build file to be executed
+           to run the doxygen doc tasks with the
+           assumption that main build file has
+           already:
+
+              -set up requried folders
+              -has already done a successful \
+               native c/c++ build via Android.mk
+               executed via ndk-build through
+               an ant exec task.
+
+
+            For this to work doxygen has to be on
+            system path.
+
+            -->
+
+
+     <!--  Set up path location of doxygen ant task -->
+
+
+     <taskdef name="doxygen" classname="org.doxygen.tools.DoxygenTask"
+      classpath="../antlibs/ant_doxygen.jar" />
+
+
+      <target name="-doxygen.doc.gen" >
+      	<!-- We provide some property name-value pairs here instead of
+      	     in doxygen.cfg so as to ant's var replacement
+      	     feature -->
+        <doxygen configFilename="../buildconfig/doxygen/doxygen.cfg">
+        	<property name="PROJECT_NAME" value="${ant.project.name}"/>
+        	<property name="OUTPUT_DIRECTORY" value="../doxygendocs/native"/>
+        	<property name="INPUT" value="../jni"/>
+        	<property name="HTML_HEADER" value="../buildconfig/doxygen/header.html"/>
+        	<property name="HTML_FOOTER" value="../buildconfig/doxygen/footer.html"/>
+        	<property name="HTML_STYLESHEET" value="../buildconfig/doxygen/stylesheet.html"/>
+        </doxygen>
+      </target>
+</project>
