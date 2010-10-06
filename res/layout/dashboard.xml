@@ -1,0 +1,42 @@
+<RelativeLayout android:id="@+id/DashBoardContainer"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/marsrise"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+      <RelativeLayout android:id="@+id/DashBoardMenu"
+
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content">
+
+                      <ImageView android:id="@+id/Go"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:src="@drawable/go_item"
+                                 >
+                      </ImageView>
+                      <ImageView android:id="@+id/Info"
+                                 android:layout_toRightOf="@id/Go"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:src="@drawable/inf_item">
+                      </ImageView>
+
+
+
+      </RelativeLayout>
+      <RelativeLayout android:id="@+id/DashBoardContent"
+                      android:layout_below="@id/DashBoardMenu"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content">
+
+                      <TextView android:text=""
+                                android:id="@+id/DashBoardTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                      </TextView>
+</RelativeLayout>
+</RelativeLayout>
