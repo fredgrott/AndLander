@@ -7,36 +7,51 @@
 
 
 
-      <RelativeLayout android:id="@+id/DashBoardMenu"
+      <RelativeLayout android:id="@+id/DashBoardBar"
 
                       android:layout_width="wrap_content"
                       android:layout_height="wrap_content">
+                      <ImageView android:id="@+id/MBlogo"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:visibility="visible"
+                                 android:src="@drawable/companylogo">
+                      </ImageView>
+                      <ImageView android:id="@+id/AndLander"
+
+                                 android:layout_centerHorizontal="true"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:visibility="visible"
+                                 android:src="@drawable/andlander">
+                      </ImageView>
+                      <ImageView android:id="@+id/ALlogo"
+                                 android:visibility="visible"
+                                 android:layout_alignParentRight="true"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:src="@drawable/al_launch_app_icon">
+                      </ImageView>
+      </RelativeLayout>
+
+
+      <RelativeLayout android:id="@+id/DashMenu"
+                      android:layout_centerVertical="true"
+                      android:layout_centerHorizontal="true"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content">
+
 
                       <ImageView android:id="@+id/Go"
                                  android:layout_width="wrap_content"
                                  android:layout_height="wrap_content"
-                                 android:src="@drawable/go_item"
-                                 >
+                                 android:src="@drawable/go_selector">
                       </ImageView>
-                      <ImageView android:id="@+id/Info"
-                                 android:layout_toRightOf="@id/Go"
+                      <ImageView android:id="@+id/Inf"
+                                 android:layout_below="@id/Go"
                                  android:layout_width="wrap_content"
                                  android:layout_height="wrap_content"
-                                 android:src="@drawable/inf_item">
+                                 android:src="@drawable/inf_selector">
                       </ImageView>
-
-
-
-      </RelativeLayout>
-      <RelativeLayout android:id="@+id/DashBoardContent"
-                      android:layout_below="@id/DashBoardMenu"
-                      android:layout_width="wrap_content"
-                      android:layout_height="wrap_content">
-
-                      <TextView android:text=""
-                                android:id="@+id/DashBoardTextView"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content">
-                      </TextView>
 </RelativeLayout>
 </RelativeLayout>
